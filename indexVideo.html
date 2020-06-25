@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos 1</title>
+
+    <link rel="stylesheet" href="./video/aspecto_videos.css">
+</head>
+<body>
+    <!-- Existen 3 estandares principales de video que utilizan CODECS (codigo que codifica/COMPRIME y descodifica.- convierte
+            señales digitales de audio y video en formato que se pueda reproducir) diferentes y que vienen impulsados por
+            tres grandes empresas.
+        
+        1.- Formato MP4(.mp4  o   .mov).- Que BAJO LICENCIA utiliza el CODEC H264. Impulsado por APPLE y MICROSOFT
+        2.- Formato OGG( .ogv).- Utiliza los CODECS VP8 y VP9  , es GRATUITO, impulsado por MOZILLA, OPERA y FIREFOX
+        3.- Formato WEB( .webm).- GRATUITO tambien e impulsado tambien por los mismos de OGG
+    
+    NO TODOS funcionan perfectamente en todos los navegadores debido a problemas relacionados a PATENTES-->
+
+
+
+
+    <!-- La ETIQUETA para video en HTML es......... <video></video> -->
+    
+    <!-- Los ATRIBUTOS de la etiqueta VIDEO son los siguientes:
+
+        SRC.-       Permite especificar donde se encuentra en que carpeta esta el video    
+        CONTROLS.-  Permite especificar si el video va a tener una BOTONERA (pause, play, etc)
+        AUTOPLAY.-  Permite especificar al navegador si nuetsro video se reproducira ni bien cargue la pagina
+        LOOP.-      Especifica si nuestro video una vez terminado VUELVE A REPRODUCIRSE.
+        POSTER.-    Permite incluir una imagen JPG  a modo de portada o presentacion.
+        PRELOAD.-   Permite especificar caracteristicas del video antes de cargarlo como cuantos 
+                    fotogramas tiene el video, cual es su duracion etc 
+
+    -->
+
+    <!-- AL hacer esto, solo aparece el video pero SIN BOTONES DE REPRODUCCION -->
+
+    <!-- Agregamos ATRIBUTO...AUTOPLAY -->
+
+    <section id="video">
+        <video id="mi video" width="720" controls loop poster="./video/beach-84533_1920.jpg" >
+            <!-- Le hemos puesto el valor del WIDTH igual al que esta en CSS para que coincida y se llene 
+            al tamaño de la etiqueta SECTION -->
+            <source src="./video/video-2012-04-05-14-22-32.mp4">
+            <source src="./video/video-2012-04-05-14-22-32.ogg">
+        </video>         
+    </section>
+
+    
+
+    <!-- Si quitamos AUTOPLAY entones la REPRODUCCION ya no será automatica. -->
+
+    <!-- SEGUNDO.- Se puede modificar el tamaño de los videos
+        Con WIDHT(ancho) y HEIGHT(alto) -->
+
+    <!-- TERCERO.- LOOP es un ATRIBUTO, repite el video indefinidamente -->
+ 
+    
+
+    <!-- <video>
+        <source src="./Inicio/video/video-2012-04-05-14-22-32.mp4">
+        <source src="./Inicio/video/video-2012-04-05-14-22-32.ogg">
+        <source src="./Inicio/video/video-2012-04-05-14-22-32.webm">
+    </video> -->
+
+
+</body>
+</html>

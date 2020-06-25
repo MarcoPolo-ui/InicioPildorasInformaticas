@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- META DESWCRIPTION para que le buscador busque informacion de que estamos trabajando -->
+    <meta name="description" content="Inicio aprendizaje HTML 5">
+    <!-- META KEYWORDS palabras clave, ha perdido fuerza con el tiempo
+    antes era muy importante para los buscadores, perdio su importancia pq habia demasiada informacion de 
+    palabras clave
+    Hoy en dia los buscadores tienen menos en cuenta esta etiqueta-->
+    <meta name="keywords" content="html5, css3, javascript, diseño web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para un BUSCADOR es mas impiortante lo que aparece en TITLE que en META KEYWORDS  -->
+    <title>Inicio</title>
+
+    <!-- LINK ( hoja de estilos )siempre tienen que ir despues de TITLE y va dentro de HEAD -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <!-- Estamos enlazando en HEATER el ATRIBUTO ID para usar lo que en en Hoja de estilos se pretende hacer -->
+    <header id="cabeceraweb">
+        <h1>Nuestra primera pagina web</h1>
+    </header>
+
+    <nav>
+        <!-- utilizaremos las UL Y LI ( LISTAS DESORRDENADAS) -->
+        <ul>
+            <li>Quienes somos</li>
+            <li>Nuestros productos</li>
+            <li>Contactenos</li>
+            <li>Precios</li>
+            
+        </ul>
+    </nav>
+
+    <!-- ASIDE esta Barra lateral, habitualmente se utiliza para vinculos EXTERNOS -->
+
+    
+    <aside id="barralateral">
+        <!-- BLOCKQUOTE se utiliza para LARGAS CITAS
+    Ejemplo citar una frase famosa de un personaje 
+    o TAMBIEN DESTACAR algún elemento de mi propio contenido
+    Ejemplo de revistas que hacen un articulo y RESALTAN un pedazo del fragmento de ese articulo -->
+
+        <blockquote>Primer Elemento</blockquote>
+        <blockquote>Segundo Elemento</blockquote>
+        <blockquote>Tercer Elemento</blockquote>
+    </aside>
+
+    <!-- Contenido principal con SECTION -->
+
+    <section id="contenidoprincipal">
+        
+        
+        <!-- ARTICLE se utiliza para agrupar culquier tipo de contenido que sea similar -->
+                
+        <article>
+        
+            <header>
+                
+                <h2>Titulo de la noticia 1</h2>
+                <!-- Subtitulo h2 -->
+                <h3>Subtitulo de la noticia 1</h3>
+            </header>
+                <p>Noticia 1</p>
+                <p>Seguimos hablando de  Noticia 1</p>
+                <p>Terminamos hablando de  Noticia 1</p>
+            <footer>
+                <p>comentarios de usuarios</p>
+            </footer>
+
+        </article>
+        
+        <article>
+            
+
+            <header>
+                <h2>Titulo de la noticia 2</h2>
+            </header>
+
+                <p>Noticia 2</p>
+                <p>Seguimos hablando de  Noticia 2</p>
+                <p>Terminamos hablando de  Noticia 2</p>
+
+            <footer>
+                <p>Comenatarios 2</p>
+            </footer>
+        </article>
+        
+        <article>
+            <header>
+                <h2>Titulo de la noticia 3</h2>
+                <h3>Subtitulo de la noticia 3</h3>
+            </header>
+                <p>Noticia 3</p>
+                <p>Seguimos hablando de  Noticia 3</p>
+                <p>Terminamos hablando de  Noticia 3</p>
+
+            <footer>
+                <p>Comenatarios 3</p>
+            </footer>
+        </article>
+        
+
+
+    </section>
+
+    <!-- FOOTER  Es el pie de pagina-->
+
+    <footer id="pieprincipal">
+        <p>Derechos reservados telefono 999999</p>
+    </footer>
+</body>
+</html>

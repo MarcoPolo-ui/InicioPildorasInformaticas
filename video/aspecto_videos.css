@@ -1,0 +1,15 @@
+
+#video{
+    width: 720px;
+    margin: 20px auto;
+    background: #ffa500;
+    padding: 5px;
+    border: 4px solid red;
+    border-radius: 16px;  /* BORDES REDONDEADOS */
+
+    /* Aca vemos por ejemplo que no esta ENCUADRADO tanto el video como la etiqueta SECTION
+    Para este caso lo que vamos a hacer es MAS GRANDE el video, por lo cual lo hare en HTML */
+
+    /* Con el PADDING lo que estamos hacioendo es darle espacio de 5PX a cada borde del contenedor
+        tanto ARRIBA ABAJO DERECHA E IZQUIERDA  */
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mas CSS1</title>
+
+<style>
+    /* Utilizamos las conocidas PSEUDO CLASES 
+
+        PRIMERO .- VEREMOS el PSEUDO CLASE de nombre NTH-CHILD(X)- Significa SELECTOR HIJO
+        Utilizaremos otros ATRIBUTOS siempre dentro de STYLE
+        la secuencia es:
+        El nombre del atributo a MODIFICAR , en este caso es  P
+        Seguida de dos puntos :
+        el nombre de este SELECTOR  es  NTH-CHILD()
+        dentro del PARENTESIS va a venir un numero que representa a el ATRIBUTO (en orden descendente)
+        al que se aplica 
+           */
+
+
+    /* SEGUNDO.- Dentro de PSEUDO CLASE de nombre NTH-CHILD() 
+                Utilizamos dentro de los parentesis las terminaciones:
+                ODD para aplicar el COLOR  a los atributos IMPARES
+                EVEN para aplicar el COLOR  a los atributos PARES  
+                */
+
+   /*  p:nth-child(even){
+        color: dodgerblue;
+    } */
+
+    /* TERCERO utilizaremos tambien estos PSEUDO CLASE: 
+
+    FIRST-CHILD le dara el COLOR (propeidad) al PRIMER HIJO
+    LAST-CHILD le dara el COLOR (propeidad) al ULTIMO  HIJO
+     */
+
+     /* CUARTO.- Existe otra PSEUDO CLASES de nombre ONLY-CHILD
+     le da el efecto deseado si es que existiera SOLO UNA ETIQUETA P   */
+
+     p:last-child{
+         color: fuchsia;
+     }
+
+
+</style>
+
+</head>
+
+
+<body>
+    <h1>MAS SELECTORES CSS 1</h1>
+
+   <article>
+        <p>Buenos dias</p>
+        <p>Buenos tardes</p>
+        <p>Buenos noches</p>
+        <p>Buenos hello</p>
+        <p>Buenos locos</p>
+        <p>Buenos amigas</p>
+        <p>Buenos marcos</p>
+   </article>
+
+   <article>
+    <p>Buenos dias</p>
+    <p>Buenos tardes</p>
+    <p>Buenos noches</p>
+    <p>Buenos hello</p>
+    <p>Buenos locos</p>
+    <p>Buenos amigas</p>
+    <p>Buenos marcos</p>
+
+</article>
+    
+</body>
+</html>

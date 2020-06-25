@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degradados Transiciones</title>
+
+
+    <style>
+        
+        #principal{
+            
+            width: 500px;
+            /* background-color: darkturquoise; */            
+            text-align: center;            
+            margin:35px auto;            
+            padding: 15px;                     
+            border:10px solid crimson;            
+            border-radius: 25px 5px 20px 30px;
+            box-shadow: darkblue 10px 5px 10px;
+
+            /* Los DEGRADADOS se aplican sobre este pedazo de codigo pues justamente pertenece 
+            a la CAJA donde estan aplicados hasta ahora los colores en diseño.
+            
+            PRIMERO.-  Para este efecto vamos a eliminar lo que es el BACKGROUND-COLOR*/
+
+            /* SEGUNDO.- Actualmente el HTML5 ya no necesita especificar, como lo hacia antes, 
+            cada tipo de NAVEGADOR donde tenia que efectuar el efecto de DEGRADADO
+            Ahora solo es NECESARIO 
+            LINEAR-GRADIENT ( propiedades) */
+
+            /* TERCERO .- Observar que ese degradado lo ha hecho de ARRIBA a ABAJO (sin TOP)
+            Ahora se le puede pedir que haga un DEGRADADO INTELIGENTE 
+            Por ejemplo de: 
+            TO TOP de abajo hacia arriba
+            TO RIGHT: hacia la derecha
+            TO LEFT: hacia la izquierda
+            TO TOP RIGHT: Arriba a la derecha
+            TO BOTTOM RIGHT: Abajo a la derecha
+            */
+
+            /* CUARTO.- Posicioandose sobre el color, se abre una linea de colores deonde se puede jugar 
+            con los mismos hasta encontrar el efecto degradado a gusto */
+
+            /* Podemos tambien trabajar con RADIAL-GRADIENT que le da otro efecto */
+
+            background-image:linear-gradient(to bottom right, rgb(78, 145, 20),rgb(245, 232, 232));
+            /* TRANSFORM para ROTAR */
+            transform: rotate(30deg);
+
+
+        }
+
+
+        -                                                                                                                                                                  
+        /* TIPO DE LETRA de otras fuentes 
+        Estos tipos de letra diversos tinene extension LETRA.TTF 
+        una vez descargado, se guarda en la carpeta del proyecto
+        Para utilizarlo usamos el siguiente SELECTOR : */
+
+        @font-face{
+            /* El nombre "MIPropiaFuente" es un NOMBRE que nosotros le asignamos
+                adicionalmente.
+                el SCR con el atributo URL    */
+            font-family:'MiPropiaFuente';
+            src: url('Arcade.ttf');
+        }     
+        
+        
+        #titulo{
+            
+            /* Aqui AGREGAMOS el nombre de el valor de la FONT FAMILY */
+            font: bold 36px 'MiPropiaFuente';        
+            text-shadow: darkorchid 10px 5px 10px;
+
+        }
+
+        #P1{
+            width: 500px;
+            /* background-color: darkturquoise; */            
+            text-align: center;            
+            margin:35px auto;            
+            padding: 15px;                     
+            border:10px solid crimson;            
+            border-radius: 25px 5px 20px 30px;
+            box-shadow: darkblue 10px 5px 10px;
+            background-image: linear-gradient(to right, green, white);
+            /* TRANSFORM SKEW lo que hace es cambiar la PERSPECTIVA */
+            transform: skew(30deg);
+        }
+
+        #P2{
+            width: 500px;
+            /* background-color: darkturquoise; */            
+            text-align: center;            
+            margin:35px auto;            
+            padding: 15px;                     
+            border:10px solid crimson;            
+            border-radius: 25px 5px 20px 30px;
+            box-shadow: darkblue 10px 5px 10px;
+            /* La TONALIDAD por defecto es ARRIBA hacia ABAJO : Azul, Blanco y Verde
+            Al AGREGAR por ejemplo TO LEFT le decimos que vaya de Azul, Blanco, Verde, naranja, rojo
+            HACIA LA IZQUIERDA */
+            background-image: linear-gradient(to left,blue, white, green, orange,red);
+            /* TRANSITION lo que hace es darle PAUSA al  TRANSFORM para que no sea tan violento el efecto */
+            transition: transform 1s ease 0.5s ;
+            
+        }
+
+        /* AL CREAR otra PSEUDO CLASE con un adicional que se llama HOVER
+        lo que se consigue es que AL PASAR EL RATON por dicha caja contenedor
+        SOLO AL PASAR EL RATON, se aplique el cambio */
+        #P2:hover{
+            transform: rotate(30deg);
+        }
+
+        #P3{
+            width: 500px;
+            /* background-color: darkturquoise; */            
+            text-align: center;            
+            margin:35px auto;            
+            padding: 15px;                     
+            border:10px solid crimson;            
+            border-radius: 25px 5px 20px 30px;
+            box-shadow: darkblue 10px 5px 10px;
+            /* Al hacer uso del RADIAL GRADIENTE funciona desde EL CENTRO hacia AFUERA
+            ADEMAS ACA se le puede dar PORCENTAJES DE INTENSIDAD  */
+            background-image: radial-gradient(orange 50%, white);
+            /* TRANSFORM SCALE se utiliza para AUMENTAR/REDUCIR en escala la caja contenedor */
+            transform: scale(0.5);
+        }
+
+       
+
+    </style>
+</head>
+
+
+<body>
+    <h1>Jugando con GRADIENTES</h1>
+
+    <article>
+        <header id="principal">
+            <span id="titulo">Estilos CSS3</span>
+        </header>
+    </article>
+
+    <article>
+
+        <p id="P1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            , totam explicabo quae ut dolores sint provident doloribus eius 
+            perspiciatis dicta quaerat autem voluptatum dolore magni repudiandae 
+            quos ab facilis quidem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            , totam explicabo quae ut dolores sint provident doloribus eius 
+            perspiciatis dicta quaerat autem voluptatum dolore magni repudiandae 
+            quos ab facilis quidem!
+        </p>
+
+        <p id="P2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            , totam explicabo quae ut dolores sint provident doloribus eius 
+            perspiciatis dicta quaerat autem voluptatum dolore magni repudiandae 
+            quos ab facilis quidem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            , totam explicabo quae ut dolores sint provident doloribus eius 
+            perspiciatis dicta quaerat autem voluptatum dolore magni repudiandae 
+            quos ab facilis quidem!
+        </p>
+
+        <p id="P3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            , totam explicabo quae ut dolores sint provident doloribus eius 
+            perspiciatis dicta quaerat autem voluptatum dolore magni repudiandae 
+            quos ab facilis quidem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            , totam explicabo quae ut dolores sint provident doloribus eius 
+            perspiciatis dicta quaerat autem voluptatum dolore magni repudiandae 
+            quos ab facilis quidem!
+        </p>
+
+        
+
+    </article>
+
+    
+
+</body>
+</html>

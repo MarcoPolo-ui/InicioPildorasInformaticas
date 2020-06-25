@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mas CSS</title>
+
+<!--Agregar otros SELECTORES CSS
+PRIMERO.- Agregando una etiqueta en HTML, que se llame STYLE   -->
+
+<style>
+
+/* SEGUNDO.- El objetivo sera darle color individual a las PALABRAS (NO AL CONTENEDOR)
+             Por princio se usará:
+             
+             el nombre de el ATRIBUTO ,  en este caso el P
+             El uso de los CORCHETES []
+             Dentro de los corchetes el SELECTOR de nombre NAME =""
+             Darle un nombre identificador sin espacios que lo identifique ("miselementos)")
+              */
+    p[name="miselementos"]{
+        color: chartreuse;    
+    }
+
+    /* OTRO CASO creamos en la SECTION algunos parrafos P
+    CUARTO.- El SELECTOR de nombre NAME nos permite utilizar 3 simbolos 
+            el primero es el ACENTO CIRCUNFLEJO (ALT+ TECLA CORCHETE)
+            Su funcion es APLICAR  la PROPIEDAD (COLOR) : VALOR ( darkcyan) a las 3 primeras letras
+            QUE EMPIEZEN el nombre del ATRIBUTO de nombre NAME   */
+
+    p[name^="pri"]{
+        color: darkcyan;
+    }
+
+
+    /* QUINTO.- Utilizamos OTRO SIMBOLO que será el  $
+        este simbolo aplica el VALOR de la PROPIEDAD  alas ULTIMAS LETRAS que se especifique en 
+        el NAME */
+
+    p[name$="tro"]{
+        color: darkorchid;
+    }
+
+    /* SEXTO.- Utilizamos OTRO SIMBOLO que será el  *
+        este simbolo aplica el VALOR de la PROPIEDAD a CUALQUIER parte de la especificacion de 
+        el NAME que CONTENGA esas letras*/
+
+        p[name*="rot"]{
+        color: darkorchid;
+    }
+
+ </style>
+
+</head>
+
+
+<body>
+
+    <h1>MAS SELECTORES CSS </h1>
+    <!-- TERCERO.- Dentro de el ATRIBUTO de nombre P
+        utilizar el SELECTOR de nombre NAME= "MISELEMENTOS" con su respectivo
+        nombre identificador.
+        Eso hará que SOLO ese atributo se modifique en LINEA y no en BLOQUE-->
+    <p name="miselementos">Hola</p>
+    <p name="miselementos">Adios</p>
+    <p>Febrero</p>
+
+    <section>
+        
+        <article>
+            <!-- Viene de CUARTO, acá le hemos agregado, NOTESE que afecta el uso del asento circunflejo  ^ 
+            a los atributos (nombres) cuyas PRIMERAS LETRAS empiezen por PRI  -->
+            <p name="primercaso">Buenos muchachos</p>
+            <p name="primercaso">Camaradas</p>
+            <p name="mogenito">Compañero</p>
+
+        </article>
+
+        <article>
+            <!-- Viene de QUINTO, acá le hemos agregado, NOTESE que afecta el uso del  $ 
+            a los atributos (nombres) cuyas ULTIMAS LETRAS empiezen por PRI  -->
+            <p name="tarootro">buenas noches</p>
+            <p name="caliostro">buenas tardes</p>
+            <p>buenas dias</p>
+        </article>
+
+
+        <article>
+            <!-- Viene de SEXTO, acá le hemos agregado, NOTESE que afecta el uso del  * 
+            a los atributos (nombres) que tienen en cualquier parte la frase ROT  -->
+
+            <p name="poroto">buenas noches</p>
+            <p name="rotoplast">buenas tardes</p>
+            <p>buenas dias</p>
+        </article>
+        
+    </section>
+    
+</body>
+</html>

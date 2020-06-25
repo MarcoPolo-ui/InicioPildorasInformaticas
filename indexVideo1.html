@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos 2</title>
+
+    <link rel="stylesheet" href="./video/aspect0_videos_1.css">
+</head>
+
+
+<body>
+    <section id="video">
+
+        <!-- PRIMERO.- Vamos a constrir nuestra PROPIA BOTONERA
+                        Por lo que vamos a eliminar CONTROLS -->
+
+        <video id="mi video" width="720" loop poster="./video/beach-84533_1920.jpg" >
+            <source src="./video/video-2012-04-05-14-22-32.mp4">
+            <source src="./video/video-2012-04-05-14-22-32.ogg">
+        </video>
+
+        <!-- SEGUNDO.- El reto será construir la BOTONERA en la zona INFERIOR del video
+            UTILIZAREMOS el atributo NAV que tiene 2 usos:
+                    Como BARRA DE NAVEGACION
+                                y
+                    Como Especificar OCNTROLES DE NAVEGACION en un video -->
+
+        <nav>
+            <div id="botones">
+                
+                <button type="button" id="reproducir">Play</button>
+                                
+            </div>
+
+            <div id="barra">
+
+                <div id="progreso">
+
+                </div>
+                
+            </div>
+            
+        </nav>
+
+    </section>
+</body>
+</html>

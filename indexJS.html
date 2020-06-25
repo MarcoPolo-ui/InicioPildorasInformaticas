@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+
+
+
+    <!-- SEGUNDO.- SCRIPT dentro de HEAD -->
+    
+       <!--  No viene el ON CLICK.- quiere decir que ni bien actualicemos la pagina, aparecera el mensaje
+            Solo viene las COMILLAS padre  -->
+        
+        <!-- 
+        <script>    
+               alert("Hola que hay de nuevo");
+        </script>
+         -->
+
+         <!-- TERCERO.- Enlazando desde un apagina externa ARCHIVO.JS es lo mas recomendable como en CSS -->
+
+         <script src="./archivo.js"></script>
+   
+
+
+</head>
+<body>
+    <!-- Esta instruccion indica que cuando pulsemos con el cursor en CUALQUIER PARTE 
+        de la frase, aparezaca un cuadro con el mensaje "Hola que hay de nuevo?"
+        Este tipo de pantallas emergentes se llaman MODAL pues no me permite hacer nada 
+        tras de ella hasta que no se ejecute la misma -->
+
+        <!-- PRIMERO.-  SCRIPT EN LINEA -->
+
+        <!-- ON CLICK se llama un EVENTO ( desencadente de la accion)
+            Debe EJECUTAR un ALERT 
+            En JAVA SCRIPT todas las sentencias terminan en (PUNTO Y COMA);
+            Dentro de las comillas viene en COMILLAS SIMPLES ( comillas PADRES e HIJAS)  -->
+
+    <!-- <p onclick="alert('Hola. Que hay de nuevo?');">Estamos estudiando Java Script</p> -->
+
+
+
+
+
+
+        <!-- CUARTO.- Viene de ARCHIVO.JS y despues de haber creado la FUNCTION
+        desde este punto SE LLAMARA a la FUNCTION mediante UN EVENTO
+        Existen VARIOS TIPOS de EVENTOS
+        Hay EVENTOS de RATON, los que se usan con mayor frecuencia
+        Hay EVENTOS de TECLADO
+        hay EVENTOS de VENTANA
+        Hay EVENTOS de TIEMPO
+        ETC ETC
+        Los EVENTOS son los DESENCADENANTES de la FUNCTION
+         -->
+
+         <!--Usaremos para este caso un EVENTO DE RATON
+            Aca tambien esta el ONCLICK
+            Pero usaremos el ONMOUSER 
+            LLAMAMOS  a la FUNCTION con el nombre con el cual se ha CREADO, en este caso SALUDO()
+            ONMOUSER hara efecto cuando PASES EL RATON por el parrafo-->
+
+
+            <!-- NO ES RECOMENDABLE poner el EVENTO  en cada etiqueta al igual como hacemos en CSS -->
+
+    <!-- <p onmouseover="saludo()";>Estamos estudiando Java Script</p> -->
+
+    <p>Estamos studiando Java Script</p>
+    <!-- <p id="importante">Ejemplo de segundo parrafo</p> -->
+    <p>Ejemplo de segundo parrafo</p>
+    <p>Ejemplo de tercer parrafo</p>
+
+</body>
+</html>

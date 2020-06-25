@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Html</title>
+
+    <!-- Se le va a dar ESTILOS a las LETRAS, a los CONTENEDORES por emdio de SOMBRAS y mas
+    Se debe abrir un STYLE  siempre dentro de HEAD -->
+
+    <style>
+        /* PRIMERO.- Utilizamos un SELECTOR de tipo ID
+                creamos el SIMBOLO #
+                luego con el INDICATIVO de nombre PRINCIPAL */
+        #principal{
+            /* TERCERO.- Con el WIDTH le damos ANCHO a la ETIQUETA DE LINEA de nombre SPAN */
+            /* CUARTO.- Con el BACKGROUND COLOR le estamos dando COLOR */
+            width: 500px;
+            background-color: darkturquoise;
+            /* QUINTO .- CENTRAMOS el texto dentro de la etiqueta */
+            text-align: center;
+            /* SEXTO.- CENTRAREMOS ahora la CAJA de tal manera que visto desde cualquier ordenador
+                        o dispositivo, SIEMPRE este centrado
+                        usaremos MARGIN AUTO */
+            /* SEPTIMO.- Para darle SEPARACION  de la CAJA con el BORDE SUPERIOR utilizaremos la especificacion 
+                        en PX */
+            margin:35px auto;
+            /* OCTAVO.- Para dar SEPARACION de las LETRAS con los BORDES de la CAJA se usa
+                        el PADDING
+                        El PADDING tiene una estructura: PRIMERA.- si yo uso solamente por ejemplo 15PX
+                        le estoy diciendo que me SEPARE  de los 4 LADOS (arriba, abajo, derecha e izquierda)
+                        ahora SEGUNDO.- SI utilizamos 2 medidas por ejemplo 15px, 20px le estoy diciendo que 
+                        sea  ARRIBA Y ABAJO y por ultimo TERCERO.- si agrego 4 sentonces es arriba, derecha, abajo e izquierda
+                        de acuerdo a las MANECILLAS DEL RELOJ  */
+            padding: 15px;
+            /* NOVENO.- Le vamos agregar un BORDE a la CAJA, eso lo hacemos con:
+                        BORDER usando la caracterista SOLID respecto al COLOR y el tamaño del borde con 15PX */            
+            border:10px solid crimson;
+            /* DECIMO .- Agregar BORDES REDONDEADOS utulizamos el SELECTOR de nombre BORDER RADIUS
+                        Al igual que con MARGIN , el tamaño o diseño redondeado del borde lo hacemos 
+                        indicando por tamaño de pixels.
+                        Si ponemos una SOLA MEDIDA indicara que el borde se aplica a los 4 lados
+                        (empíeza por dercha superior y de aceurdo a manecilas de reloj) */
+            border-radius: 25px 5px 20px 30px;
+
+            /* DECIMO SEGUNDO.- Le daremos a la CAJA una SOMBRA, lo haremos con BOX-SHADOW
+                                primero se le da COLOR 
+                                LUEGO le damos desplazamientos a la sombra
+                                el primero es HORIZONTAL 10PX
+                                el segundo es VERTICAL
+                                el tercero es DIFUMINACION DE LA SOMBRA con 10px  */
+
+            box-shadow: darkblue 10px 5px 10px;
+
+        }
+
+        /* Vamos a darle estilo a loq ue esta DENTRO DE LA CAJA, en este caso las letras como tamaño de letras,
+            efectos y eso
+            utilizamos para eso el SELECTOR con nombre #TITULO que enlaza directamente al SPAN */        
+        #titulo{
+            /* DECIMO PRIMERO.- FONT: BOLD es para que el texto este en NEGRITA
+                                con TAMAÑO de 36px
+                                con TIPO DE LETRA que es Vedana, Geneva, sans-serif (esta secuencia tiene un detalle: 
+                                primero es que la letra tipo VERDANA sea la que se utilice
+                                sino la encuentra sigue con GENEVA
+                                finalmente con SANS SERIF
+                                esa es la observacion DEPENDIENDO si TODOS los que naveguen por nuestra pagina
+                                tengan INSTALADA este tipo de fuente en su ordenador
+                                Resulta un PROBLEMA cuando uno desea que el tipo de letra sea ese o cuando se utiliza 
+                                un tipo de LETRA especifico que no lo tenga el que ve la pagina web  */
+            font: bold 36px Verdana, Geneva, sans-serif;
+
+            /* DECIMO TERCERO.- Se puede aplicar SOMBRAS tambien al contenido de las cajas
+                                con TEXT SHADOW
+                                el primero es HORIZONTAL 10PX
+                                el segundo es VERTICAL
+                                el tercero es DIFUMINACION DE LA SOMBRA con 10px */
+        
+            text-shadow: darkorchid 10px 5px 10px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- SEGUNDO.- Aca es donde viene el ENLACE de STYLE
+                    con el ID   -->
+    <header id="principal">
+        <span id="titulo">Estilos CSS3</span>
+    </header>
+
+</body>
+</html>

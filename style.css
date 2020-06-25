@@ -1,0 +1,130 @@
+/* Aqui entran por primera vez lo que se llaman SELECTORES
+EXISTEN 3 TIPOS DE SELECTORES :
+Etiqueta (Body por ejemplo)
+ID
+Clase
+
+
+BODY es uno de ellos */
+
+
+
+
+
+/* Dentro del SELECTOR 
+se usa lo que se llama PROPIEDAD : VALOR */
+
+
+/* body{
+    (PROPIEDAD) background-color: (VALOR)cyan;
+}*/
+
+
+
+/* header{
+    
+    background-color: darkgreen;
+}  */
+
+/* Al hacer eso, le mandamos color a todos los HEATER
+    y esa no es la idea */
+
+/* Para crear COLOR para cada etiqueta HEADER individual hacemosw lo siguiente: */
+
+/* Utilizaremos un SELECTOR de tipo ID ( se usa para aplicar APARIENCIA  a un UNICO DOCUMENTO EN PAGINA WEB.
+como se usa ???
+
+
+PRIMERO se pone un SIMBOLO que es la # 
+SEGUNDO usar un nombre IDENTIFICATIVO que puede ser el que queramos
+que quede asi por ejemplo:
+#cabeceraweb
+
+*/
+
+#cabeceraweb{
+    background-color: darkorange;
+}
+
+/* A continuacion vamos a la pagina HTML a ENLAZAR ese ID */
+
+
+/* Usaremos NAV nada mas porque solo existe una SOLA etiqueta en nuestra pagina HTML
+Si hubieran varias PROCEDERIAMOS como la anterior
+*/
+nav{
+    background-color: darkseagreen;
+}
+
+#barralateral{
+    background-color: dodgerblue;
+
+/* QUINTO.-  El ASIDE generalmente es una BARRA LATERAL por lo que utilizaremos
+el SELECTOR  que se llama FLOAT y que tiene la propiedad LEFT- izquierda.
+
+SEXTO.- Aunque vemos que solo utiliza una pequeña seccion de ALTO
+
+SEPTIMO.-Utilizaremos para esto otro SELECTOR  que se llama  HEIGHT
+y una propiedad que sera TAMAÑO DE PIXELES que va "hacia abajo" de la pantalla. */
+
+    float: left;
+    height: 640px;
+
+}
+
+#contenidoprincipal{
+    background-color: fuchsia;
+
+
+    /* DECIMO.- SEPARAREMOS la etiqueta SECTION para diferenciarla de el ASIDE
+    Usamos para este efecto el selector MARGIN - LEFT
+    con PROPIEDAD en PX que representan la distancia del borde del bloque 
+    con el BORDE IZQUIERDO de la pantalla ( OJO , no se trata de distancia con ASIDE). */
+
+    margin-left: 220px;
+
+    /* DECIMO PRIMERO.- Este SELECTOR  de nombre PADDING sirve para distanciar las LETRAS
+    con relacion al bloque o caja contenedor
+    PADDING-LEFT con referencia a la izquierda-las letras
+    PADDING-TOP con referencia a arriba-las letras
+
+    DECIMO SEGUNDO esta en la pagina HTML  "index1.html"
+
+    NOTA.- Los MARGING y PADDING tienen muchas mas variaciones y estructuras, hay veces se cruzan
+    esto es lo BASICO
+     */
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+
+#pieprincipal{
+
+    
+    background-color: goldenrod;
+    
+
+    /* OCTAVO.-CLEAR consiste en ROMPER el FLOAT que sobrepasa el bloque ASIDE  */
+    clear: both;
+
+    /* NOVENO.- Le vamos a dar un poco mas de MARGEN de SEPARACION a esta ETIQUETA para diferenciarla */
+    margin-top: 20px;
+    
+
+
+}
+
+/* Vamos a trabajar en la barra de navegacion NAV
+TERCERO.- le vamos a dar un color diferente y utilizamos solo la etiqueta de BLOQUE LI
+
+CUARTO.- las etiquetas como son de BLOQUE estan una encima de otra pero deben estar una DELANTE de otra
+para esto
+utilizamos el SELECTOR  que se llama DISPLAY y su PROPIEDAD  que se llama INLINE */
+
+li{
+    background-color: lime;
+    display: inline;
+}
+
+
+
